@@ -4,28 +4,29 @@ import home from '../view/home'
 import detail from '../view/detail'
 import edit from '../view/edit'
 Vue.use(Router)
- const router = new Router({
-     routes:[
-         {
-             path: '',
-             redirect:'/home'
-         },
-         {
+const router = new Router({
+    mode:'hash',
+    routes: [
+        {
+            path: '',
+            redirect: '/home'
+        },
+        {
             path: '/home',
-            component: home,  
-         },
-         {
+            component: home,
+        },
+        {
             path: '/detail',
-            name:'detail',
-             component:detail
-         },
-         {
-             path: '/edit/:id',
-             name:'edit',
-             component:edit
-         },
-        
-        
+            name: 'detail',
+            component: detail
+        },
+        {
+            path: '/edit/:id',
+            name: 'edit',
+            component: edit
+        },
+
+
     ]
- })
- export default router
+})
+export default router

@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",
+    "http-server": "^0.12.3",
     "vue": "^2.6.11",
     "vue-router": "^3.4.7",
     "vuex": "^3.5.1"
